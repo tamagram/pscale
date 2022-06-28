@@ -42,5 +42,6 @@ export async function getStaticProps(context) {
   }));
   return {
     props: { products },
+    revalidate: 60,
   };
 }
