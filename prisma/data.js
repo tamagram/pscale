@@ -22,6 +22,7 @@ const products = [
     price: new Prisma.Decimal(19.95),
     image: '/images/helmet.jpg',
     category_id: 1,
+    discounted: true,
   },
   {
     name: 'Grey T-Shirt',
@@ -29,6 +30,7 @@ const products = [
     price: new Prisma.Decimal(22.95),
     image: '/images/shirt.jpg',
     category_id: 3,
+    discounted: false,
   },
   {
     name: 'Socks',
@@ -36,6 +38,7 @@ const products = [
     price: new Prisma.Decimal(12.95),
     image: '/images/socks.jpg',
     category_id: 2,
+    discounted: true,
   },
   {
     name: 'Sweatshirt',
@@ -43,6 +46,7 @@ const products = [
     price: new Prisma.Decimal(12.95),
     image: '/images/sweatshirt.jpg',
     category_id: 3,
+    discounted: false,
   },
 ];
 
