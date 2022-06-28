@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export default function Product({ product }) {
-  const { name, description, price, image, category } = product;
+  const { name, description, price, image, category, discounted } = product;
 
   return (
     <div
@@ -20,6 +20,7 @@ export default function Product({ product }) {
         <div className="font-bold text-xl mb-2">{name}</div>
         <p className="text-gray-700 text-base">{description}</p>
         <p className="text-gray-900 text-xl">${price}</p>
+        {discounted && <p className="text-red-600 text-xl">Sale!</p>}
       </div>
       <div className="px-6 pt-4 pb-2">
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
